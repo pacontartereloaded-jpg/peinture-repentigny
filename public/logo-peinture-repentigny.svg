@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 64" role="img" aria-labelledby="title desc">
+  <title id="title">Peinture Repentigny</title>
+  <desc id="desc">Logo de Peinture Repentigny avec maison et rouleau de peinture.</desc>
+  <rect width="260" height="64" rx="16" fill="#FFFFFF"/>
+  <g transform="translate(12 10)">
+    <rect x="0" y="9" width="44" height="36" rx="10" fill="#8FB83A"/>
+    <path d="M8 25 22 13l14 12v17H8V25Z" fill="#FFFFFF"/>
+    <path d="M30 17h7v6h-7z" fill="#FFFFFF"/>
+    <rect x="14" y="31" width="9" height="11" rx="1.5" fill="#1A1A1A"/>
+    <path d="M26 32h13" stroke="#1A1A1A" stroke-width="3" stroke-linecap="round"/>
+    <path d="M39 32c7 0 7 5 3 7l-7 4" stroke="#1A1A1A" stroke-width="3" stroke-linecap="round" fill="none"/>
+  </g>
+  <text x="70" y="29" font-family="Georgia, 'Times New Roman', serif" font-size="20" font-weight="700" fill="#1A1A1A">Peinture</text>
+  <text x="70" y="49" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#8FB83A">Repentigny</text>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 680" role="img" aria-labelledby="title desc">
+  <title id="title">Benjamin Moore</title>
+  <desc id="desc">Logo Benjamin Moore avec triangle rouge et texte bleu.</desc>
+  <rect width="900" height="680" fill="#FFFFFF"/>
+
+  <g transform="translate(318 24)">
+    <path d="M132 0 264 230H0L132 0Z" fill="#C9002B"/>
+
+    <path d="M105 82 33 202H78L127 120 176 202H222L149 82H105Z" fill="#FFFFFF"/>
+    <path d="M132 142 169 202H95L132 142Z" fill="#C9002B"/>
+
+    <path d="M178 78 236 178 220 202 162 102 178 78Z" fill="#FFFFFF"/>
+    <path d="M192 102 214 141 200 164 178 125 192 102Z" fill="#C9002B" opacity="0.06"/>
+  </g>
+
+  <text x="450" y="378" text-anchor="middle" font-family="Arial Black, Arial, Helvetica, sans-serif" font-size="138" font-weight="900" letter-spacing="-7" fill="#003B7A">Benjamin</text>
+  <text x="450" y="520" text-anchor="middle" font-family="Arial Black, Arial, Helvetica, sans-serif" font-size="138" font-weight="900" letter-spacing="-7" fill="#003B7A">Moore</text>
+  <text x="682" y="468" font-family="Arial, Helvetica, sans-serif" font-size="35" font-weight="700" fill="#003B7A">®</text>
+</svg>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://peinturerepentigny.ca/</loc>
+    <lastmod>2026-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://peinturerepentigny.ca/public/images/hero-peinture-interieure-repentigny.jpg</image:loc>
+      <image:title>Peinture intérieure professionnelle à Repentigny</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://peinturerepentigny.ca/public/images/realisation-salon-apres.jpg</image:loc>
+      <image:title>Salon après peinture professionnelle à Repentigny</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://peinturerepentigny.ca/public/images/realisation-exterieur-apres.jpg</image:loc>
+      <image:title>Maison extérieure après peinture au Gardeur</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://peinturerepentigny.ca/en/</loc>
+    <lastmod>2026-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://peinturerepentigny.ca/public/images/og-image.jpg</image:loc>
+      <image:title>Professional painters in Repentigny</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://peinturerepentigny.ca/peinture-interieure-repentigny</loc>
+    <lastmod>2026-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://peinturerepentigny.ca/peinture-exterieure-repentigny</loc>
+    <lastmod>2026-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://peinturerepentigny.ca/prix-peintre-repentigny</loc>
+    <lastmod>2026-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://peinturerepentigny.ca/peintre-commercial-repentigny</loc>
+    <lastmod>2026-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://peinturerepentigny.ca/peintre-le-gardeur</loc>
+    <lastmod>2026-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>
