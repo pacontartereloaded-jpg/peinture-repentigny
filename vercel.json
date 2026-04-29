@@ -1,6 +1,9 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
+  "buildCommand": "node build-static.js",
+  "outputDirectory": "dist",
+  "installCommand": "",
   "rewrites": [
     { "source": "/en", "destination": "/en/index.html" },
     { "source": "/peintres-repentigny", "destination": "/index.html" },
