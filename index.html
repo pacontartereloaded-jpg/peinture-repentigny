@@ -290,7 +290,8 @@
       display: flex; justify-content: center; gap: 28px; flex-wrap: wrap;
     }
     .hero-trust-item { display: flex; align-items: center; gap: 8px; }
-    .hero-trust-icon { width: 38px; height: 38px; border-radius: 50%; background: rgba(255,255,255,0.95); display: flex; align-items: center; justify-content: center; box-shadow: var(--shadow-sm); font-size: 11px; font-weight: 800; color: var(--lime); letter-spacing: 0.02em; }
+    .hero-trust-icon { width: 38px; height: 38px; border-radius: 50%; background: rgba(255,255,255,0.95); display: flex; align-items: center; justify-content: center; box-shadow: var(--shadow-sm); color: var(--lime); }
+    .custom-icon { width: 22px; height: 22px; display: block; color: currentColor; }
     .hero-trust-text { font-size: 13px; color: rgba(255,255,255,0.68); font-weight: 500; text-shadow: 0 4px 18px rgba(0,0,0,0.35); }
     .hero-trust-text strong { color: var(--white); display: block; font-size: 14px; }
 
@@ -351,7 +352,8 @@
       background: var(--white); border-radius: var(--radius); padding: 18px 22px;
       box-shadow: var(--shadow-md); text-align: center;
     }
-    .cert-icon { font-size: 18px; line-height: 1; font-weight: 800; color: var(--lime); letter-spacing: 0.04em; }
+    .cert-icon { color: var(--lime); display: flex; justify-content: center; }
+    .cert-icon .custom-icon { width: 34px; height: 34px; }
     .cert-label { font-size: 12px; font-weight: 600; color: var(--mid); margin-top: 4px; }
 
     .pourquoi-features { display: flex; flex-direction: column; gap: 0; }
@@ -363,7 +365,7 @@
     .feature-icon {
       width: 44px; height: 44px; min-width: 44px; border-radius: 10px;
       background: var(--lime-pale); display: flex; align-items: center;
-      justify-content: center; font-size: 20px;
+      justify-content: center; color: var(--lime);
     }
     .feature-content h3 { font-size: 16px; font-weight: 600; color: var(--dark); margin-bottom: 4px; }
     .feature-content p { font-size: 14px; color: var(--muted); line-height: 1.6; }
@@ -390,8 +392,9 @@
     .service-icon-wrap {
       width: 56px; height: 56px; border-radius: 14px;
       background: var(--lime-pale); display: flex; align-items: center;
-      justify-content: center; font-size: 13px; font-weight: 800; letter-spacing: 0.08em; color: var(--lime); margin-bottom: 20px;
+      justify-content: center; color: var(--lime); margin-bottom: 20px;
     }
+    .service-icon-wrap .custom-icon { width: 30px; height: 30px; }
     .service-card h3 {
       font-family: var(--font-head); font-size: 20px; font-weight: 600;
       color: var(--dark); margin-bottom: 10px;
@@ -447,7 +450,8 @@
     }
     .local-zone-card:hover { border-color: var(--lime-border); box-shadow: var(--shadow-sm); }
     .local-zone-header { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
-    .local-zone-pin { width: 32px; height: 32px; border-radius: 8px; background: var(--lime-pale); display: flex; align-items: center; justify-content: center; font-size: 16px; }
+    .local-zone-pin { width: 32px; height: 32px; border-radius: 8px; background: var(--lime-pale); color: var(--lime); display: flex; align-items: center; justify-content: center; }
+    .local-zone-pin .custom-icon { width: 18px; height: 18px; }
     .local-zone-card h3 { font-size: 16px; font-weight: 600; color: var(--dark); }
     .local-zone-card p { font-size: 14px; color: var(--muted); line-height: 1.65; }
     .local-zone-tags { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
@@ -877,7 +881,7 @@
           La <em>précision</em> du<br>métier artisan.
         </h1>
         <p class="hero-sub">
-          Depuis plus de 10 ans, nous transformons les maisons et commerces de Repentigny avec des finitions irréprochables. Peintures Benjamin Moore et Sherwin-Williams. Garantie satisfaction totale.
+          Depuis plus de 10 ans, nous transformons les maisons et commerces de Repentigny avec des finitions irréprochables. Peintures Benjamin Moore, Sherwin-Williams, Betonel et MF Peinture. Garantie satisfaction totale.
         </p>
         <div class="hero-actions">
           <a href="tel:+14509148104" class="btn btn-primary btn-lg">
@@ -889,21 +893,21 @@
         </div>
         <div class="hero-trust">
           <div class="hero-trust-item">
-            <div class="hero-trust-icon">4.9</div>
+            <div class="hero-trust-icon"><svg class="custom-icon"><use href="public/icons.svg#icon-rating"></use></svg></div>
             <div class="hero-trust-text">
               <strong>4.9 / 5</strong>
               143 avis Google
             </div>
           </div>
           <div class="hero-trust-item">
-            <div class="hero-trust-icon">RBQ</div>
+            <div class="hero-trust-icon"><svg class="custom-icon"><use href="public/icons.svg#icon-shield"></use></svg></div>
             <div class="hero-trust-text">
               <strong>Assurés RBQ</strong>
               Travaux garantis
             </div>
           </div>
           <div class="hero-trust-item">
-            <div class="hero-trust-icon">BM</div>
+            <div class="hero-trust-icon"><svg class="custom-icon"><use href="public/icons.svg#icon-paint"></use></svg></div>
             <div class="hero-trust-text">
               <strong>Benjamin Moore</strong>
               Produits certifiés
@@ -931,7 +935,7 @@
   <div class="container">
     <div class="metrics-grid">
       <div class="metric-item">
-        <div class="metric-num">800+</div>
+        <div class="metric-num">150+</div>
         <div class="metric-label">Projets réalisés à Repentigny</div>
       </div>
       <div class="metric-item">
@@ -943,8 +947,8 @@
         <div class="metric-label">Années d'expertise locale</div>
       </div>
       <div class="metric-item">
-        <div class="metric-num">100%</div>
-        <div class="metric-label">Clients satisfaits garantis</div>
+        <div class="metric-num">95%</div>
+        <div class="metric-label">Clients satisfaits</div>
       </div>
     </div>
   </div>
@@ -959,7 +963,7 @@
           <img src="public/images/artisan-peintre-preparation.jpg" alt="Preparation professionnelle avant peinture interieure a Repentigny" width="1200" height="1320" loading="lazy">
         </div>
         <div class="pourquoi-cert-card">
-          <div class="cert-icon">RBQ</div>
+          <div class="cert-icon"><svg class="custom-icon"><use href="public/icons.svg#icon-shield"></use></svg></div>
           <div class="cert-label">Certifié RBQ<br>Repentigny</div>
         </div>
       </div>
@@ -972,35 +976,35 @@
         <p class="section-sub">Les propriétaires de Repentigny nous font confiance non pas parce que nous promettons le moins cher — mais parce que notre travail parle pour lui-même.</p>
         <div class="pourquoi-features mt-40">
           <div class="feature-row">
-            <div class="feature-icon">01</div>
+            <div class="feature-icon"><svg class="custom-icon"><use href="public/icons.svg#icon-paint"></use></svg></div>
             <div class="feature-content">
               <h3>Peintures haut de gamme uniquement</h3>
-              <p>Nous utilisons exclusivement des produits Benjamin Moore et Sherwin-Williams — les standards de l'industrie pour la durabilité, la couverture et l'esthétique finale.</p>
+              <p>Nous utilisons des produits Benjamin Moore, Sherwin-Williams, Betonel et MF Peinture — des standards fiables pour la durabilité, la couverture et l'esthétique finale.</p>
             </div>
           </div>
           <div class="feature-row">
-            <div class="feature-icon">02</div>
+            <div class="feature-icon"><svg class="custom-icon"><use href="public/icons.svg#icon-prep"></use></svg></div>
             <div class="feature-content">
               <h3>Préparation de surface méticuleuse</h3>
               <p>80 % d'un travail de peinture réussi, c'est la préparation. Nous ponçons, réparons, apprêtons et préparons chaque surface avant d'appliquer la moindre couche de couleur.</p>
             </div>
           </div>
           <div class="feature-row">
-            <div class="feature-icon">03</div>
+            <div class="feature-icon"><svg class="custom-icon"><use href="public/icons.svg#icon-quote"></use></svg></div>
             <div class="feature-content">
               <h3>Soumissions transparentes et détaillées</h3>
               <p>Notre soumission gratuite détaille chaque étape, chaque produit et chaque coût. Pas de surprises. Pas d'extras cachés. Vous savez exactement pour quoi vous payez.</p>
             </div>
           </div>
           <div class="feature-row">
-            <div class="feature-icon">04</div>
+            <div class="feature-icon"><svg class="custom-icon"><use href="public/icons.svg#icon-local"></use></svg></div>
             <div class="feature-content">
               <h3>Experts des maisons de Repentigny</h3>
               <p>Nous connaissons les spécificités architecturales des quartiers de Repentigny, du Gardeur et de Charlemagne — revêtements, matériaux locaux, contraintes climatiques du Québec.</p>
             </div>
           </div>
           <div class="feature-row">
-            <div class="feature-icon">05</div>
+            <div class="feature-icon"><svg class="custom-icon"><use href="public/icons.svg#icon-check"></use></svg></div>
             <div class="feature-content">
               <h3>Garantie de satisfaction écrite</h3>
               <p>Nous remettons votre espace propre et votre satisfaction est garantie par écrit. Si quelque chose ne vous convient pas, nous revenons sans frais supplémentaires.</p>
@@ -1025,7 +1029,7 @@
     </div>
     <div class="services-grid mt-40">
       <div class="service-card fade-up">
-        <div class="service-icon-wrap">INT</div>
+        <div class="service-icon-wrap"><svg class="custom-icon"><use href="public/icons.svg#icon-interior"></use></svg></div>
         <h3>Peinture intérieure résidentielle</h3>
         <p>Transformez chaque pièce de votre maison avec des finitions propres et durables. Salons, chambres, cuisines, sous-sols — nous couvrons tous les espaces.</p>
         <ul class="service-list">
@@ -1038,7 +1042,7 @@
         <a href="#tarifs" class="service-card-link">Obtenir un prix →</a>
       </div>
       <div class="service-card fade-up" style="transition-delay:0.08s;">
-        <div class="service-icon-wrap">EXT</div>
+        <div class="service-icon-wrap"><svg class="custom-icon"><use href="public/icons.svg#icon-exterior"></use></svg></div>
         <h3>Peinture extérieure &amp; revêtement</h3>
         <p>Protégez et embellissez votre maison contre les hivers québécois. Systèmes de peinture extérieure conçus pour durer 8 à 12 ans sous notre climat.</p>
         <ul class="service-list">
@@ -1051,7 +1055,7 @@
         <a href="#tarifs" class="service-card-link">Obtenir un prix →</a>
       </div>
       <div class="service-card fade-up" style="transition-delay:0.16s;">
-        <div class="service-icon-wrap">CAB</div>
+        <div class="service-icon-wrap"><svg class="custom-icon"><use href="public/icons.svg#icon-cabinet"></use></svg></div>
         <h3>Refinition d'armoires de cuisine</h3>
         <p>Renouvelez votre cuisine sans les coûts d'un remplacement. Nos techniques de laquage professionnel redonnent à vos armoires un aspect neuf showroom.</p>
         <ul class="service-list">
@@ -1064,7 +1068,7 @@
         <a href="#tarifs" class="service-card-link">Obtenir un prix →</a>
       </div>
       <div class="service-card fade-up" style="transition-delay:0.24s;">
-        <div class="service-icon-wrap">COM</div>
+        <div class="service-icon-wrap"><svg class="custom-icon"><use href="public/icons.svg#icon-commercial"></use></svg></div>
         <h3>Peinture commerciale &amp; institutionnelle</h3>
         <p>Bureaux, commerces, restaurants, entrepôts — nous gérons les projets commerciaux avec un minimum de perturbations pour vos opérations.</p>
         <ul class="service-list">
@@ -1077,7 +1081,7 @@
         <a href="#tarifs" class="service-card-link">Obtenir un prix →</a>
       </div>
       <div class="service-card fade-up" style="transition-delay:0.32s;">
-        <div class="service-icon-wrap">CON</div>
+        <div class="service-icon-wrap"><svg class="custom-icon"><use href="public/icons.svg#icon-condo"></use></svg></div>
         <h3>Peinture de condos &amp; copropriétés</h3>
         <p>Spécialistes en milieu condo. Nous respectons les règlements d'immeuble, protégeons les parties communes et livrons en délais stricts.</p>
         <ul class="service-list">
@@ -1090,7 +1094,7 @@
         <a href="#tarifs" class="service-card-link">Obtenir un prix →</a>
       </div>
       <div class="service-card fade-up" style="transition-delay:0.40s;">
-        <div class="service-icon-wrap">DEC</div>
+        <div class="service-icon-wrap"><svg class="custom-icon"><use href="public/icons.svg#icon-decorative"></use></svg></div>
         <h3>Peinture décorative &amp; spéciale</h3>
         <p>Effets spéciaux, patines, béton ciré, marquage de stationnement — nous offrons des solutions créatives pour les espaces qui veulent se démarquer.</p>
         <ul class="service-list">
@@ -1136,7 +1140,7 @@
         <div class="local-zones mt-40">
           <div class="local-zone-card">
             <div class="local-zone-header">
-              <div class="local-zone-pin">REP</div>
+              <div class="local-zone-pin"><svg class="custom-icon"><use href="public/icons.svg#icon-local"></use></svg></div>
               <h3>Repentigny — Centre-ville &amp; quartiers résidentiels</h3>
             </div>
             <p>De la rue Notre-Dame aux nouveaux développements du secteur nord, nous connaissons chaque quartier de Repentigny. Maisons de ville, jumelés, unifamiliales — notre expérience couvre tous les types de propriétés de la ville.</p>
@@ -1148,7 +1152,7 @@
           </div>
           <div class="local-zone-card">
             <div class="local-zone-header">
-              <div class="local-zone-pin">LG</div>
+              <div class="local-zone-pin"><svg class="custom-icon"><use href="public/icons.svg#icon-exterior"></use></svg></div>
               <h3>Le Gardeur — Secteur résidentiel établi</h3>
             </div>
             <p>Le Gardeur abrite de nombreuses maisons des années 80 et 90 qui bénéficient particulièrement d'une nouvelle peinture extérieure. Nous intervenons régulièrement dans ce secteur pour des rénovations complètes et des rajeunissements de façade.</p>
@@ -1160,7 +1164,7 @@
           </div>
           <div class="local-zone-card">
             <div class="local-zone-header">
-              <div class="local-zone-pin">CHA</div>
+              <div class="local-zone-pin"><svg class="custom-icon"><use href="public/icons.svg#icon-interior"></use></svg></div>
               <h3>Charlemagne — Maisons de caractère</h3>
             </div>
             <p>Charlemagne est une ville de cachet avec de nombreuses propriétés historiques qui demandent un savoir-faire particulier. Nos peintres respectent l'authenticité architecturale tout en modernisant l'apparence visuelle de chaque propriété.</p>
@@ -1172,7 +1176,7 @@
           </div>
           <div class="local-zone-card">
             <div class="local-zone-header">
-              <div class="local-zone-pin">25</div>
+              <div class="local-zone-pin"><svg class="custom-icon"><use href="public/icons.svg#icon-local"></use></svg></div>
               <h3>Mascouche, L'Assomption &amp; environs</h3>
             </div>
             <p>Notre zone de service s'étend naturellement vers Mascouche, L'Assomption et Terrebonne. Si vous habitez à moins de 25 km de Repentigny, contactez-nous — nous intervenons probablement dans votre secteur.</p>
@@ -1396,7 +1400,7 @@
         <span>Notre approche</span>
       </div>
       <h2 class="section-title">Un processus <em>sans stress</em>,<br>du premier appel à la remise des clés</h2>
-      <p class="section-sub">Nous avons perfectionné notre processus en plus de 800 projets. Chaque étape est conçue pour vous offrir une expérience fluide et un résultat impeccable.</p>
+      <p class="section-sub">Nous avons perfectionné notre processus sur plus de 150 projets. Chaque étape est conçue pour vous offrir une expérience fluide et un résultat impeccable.</p>
     </div>
     <div class="process-steps fade-up" style="transition-delay:0.1s;">
       <div class="process-step">
@@ -1558,7 +1562,7 @@
   <div class="cta-final-inner">
     <span class="badge">Soumission gratuite — Réponse sous 24h</span>
     <h2>Prêt à transformer<br>votre <em>espace</em>?</h2>
-    <p>Rejoignez plus de 800 propriétaires et entreprises de Repentigny qui nous ont fait confiance. Votre soumission gratuite vous attend.</p>
+    <p>Rejoignez plus de 150 propriétaires et entreprises de Repentigny qui nous ont fait confiance. Votre soumission gratuite vous attend.</p>
     <div class="cta-final-actions">
       <a href="tel:+14509148104" class="btn btn-primary btn-lg">Appeler maintenant</a>
       <a href="#tarifs" class="btn btn-white btn-lg">Soumission en ligne →</a>
@@ -1591,7 +1595,7 @@
       <div class="footer-brand">
         <h3>Peinture<span>Repentigny</span></h3>
         <p>Entreprise de peinture professionnelle au service des propriétaires et commerces de Repentigny, Le Gardeur, Charlemagne et des environs depuis plus de 10 ans.</p>
-        <p style="margin-top:16px; font-size:12px;">Peintures Benjamin Moore · Sherwin-Williams · RBQ certifié · Assurés</p>
+        <p style="margin-top:16px; font-size:12px;">Benjamin Moore · Sherwin-Williams · Betonel · MF Peinture · RBQ certifié · Assurés</p>
       </div>
       <div class="footer-col">
         <h4>Services</h4>
@@ -1646,10 +1650,10 @@
 <script>
 // --- FAQ DATA ---
 const faqs = [
-  { cat: 'prix', q: 'Combien coûte une peinture intérieure à Repentigny?', a: 'Le prix d\'une peinture intérieure à Repentigny varie entre 600 $ et 1 800 $ par pièce, selon la superficie, la hauteur des plafonds et l\'état des surfaces. Une maison complète de 1 200 à 2 000 pi² se situe généralement entre 3 500 $ et 9 000 $. Ces prix incluent la préparation des surfaces, l\'apprêt et deux couches de peinture premium (Benjamin Moore ou Sherwin-Williams). Obtenez votre soumission gratuite sous 24h pour un prix exact basé sur votre projet.' },
+  { cat: 'prix', q: 'Combien coûte une peinture intérieure à Repentigny?', a: 'Le prix d\'une peinture intérieure à Repentigny varie entre 400 $ et 800 $ par pièce, selon la superficie, la hauteur des plafonds et l\'état des surfaces. Une maison complète de 1 200 à 2 000 pi² se situe généralement entre 3 500 $ et 9 000 $. Ces prix incluent la préparation des surfaces, l\'apprêt et deux couches de peinture premium (Benjamin Moore, Sherwin-Williams, Betonel ou MF Peinture). Obtenez votre soumission gratuite sous 24h pour un prix exact basé sur votre projet.' },
   { cat: 'prix', q: 'Combien coûte la peinture extérieure d\'une maison à Repentigny?', a: 'La peinture extérieure d\'une maison standard à Repentigny coûte entre 2 500 $ et 7 500 $. Ce prix inclut le lavage sous pression, la réparation des fissures et joints, l\'apprêt et deux couches de peinture extérieure résistante aux intempéries. Les variables principales sont la superficie de la maison, le type de revêtement (brique, bois, vinyle, stucco) et l\'état actuel des surfaces. Contactez-nous pour une soumission peinture gratuite Repentigny.' },
   { cat: 'prix', q: 'Offrez-vous une soumission peinture gratuite à Repentigny?', a: 'Oui, absolument. Nous offrons une soumission peinture gratuite et sans obligation à tous les propriétaires de Repentigny, Le Gardeur, Charlemagne et des environs. Notre estimateur se déplace chez vous, évalue le projet en détail et vous remet une soumission complète par écrit sous 24 heures. La soumission détaille chaque poste de travail, les produits utilisés et le coût total — sans surprise.' },
-  { cat: 'prix', q: 'La peinture haut de gamme vaut-elle le coût supplémentaire?', a: 'Oui, et voici pourquoi: une peinture Benjamin Moore ou Sherwin-Williams de qualité supérieure couvre mieux (souvent en une seule couche là où une peinture économique en nécessiterait trois), dure plus longtemps (8 à 12 ans en intérieur contre 4 à 6 ans) et est plus facile à nettoyer. Au total, vous économisez en réduisant la fréquence des retouches et en préservant la valeur de votre propriété. C\'est pour ça que nous n\'utilisons que des produits haut de gamme.' },
+  { cat: 'prix', q: 'La peinture haut de gamme vaut-elle le coût supplémentaire?', a: 'Oui, et voici pourquoi: une peinture Benjamin Moore, Sherwin-Williams, Betonel ou MF Peinture de qualité supérieure couvre mieux, dure plus longtemps et est plus facile à nettoyer. Au total, vous économisez en réduisant la fréquence des retouches et en préservant la valeur de votre propriété.' },
   { cat: 'prix', q: 'Acceptez-vous les paiements par versements ou carte de crédit?', a: 'Nous acceptons les paiements par carte de crédit (Visa, Mastercard), Interac, chèque et argent comptant. Pour les grands projets résidentiels et commerciaux, nous pouvons convenir d\'un échéancier de paiement en deux versements: un dépôt au démarrage et le solde à la fin des travaux. Discutez-en avec nous au moment de la soumission.' },
   { cat: 'service', q: 'Peignez-vous aussi à Le Gardeur et Charlemagne?', a: 'Oui. Notre zone de service couvre l\'ensemble de la région de Repentigny, incluant Le Gardeur, Charlemagne, Mascouche et L\'Assomption. Nous intervenons régulièrement dans ces secteurs et connaissons les spécificités architecturales et les types de propriétés propres à chaque quartier. Si vous habitez dans un rayon de 25 km de Repentigny, contactez-nous — nous desservons probablement votre secteur.' },
   { cat: 'service', q: 'Peignez-vous les armoires de cuisine?', a: 'Oui, la refinition d\'armoires de cuisine est l\'une de nos spécialités. Nous utilisons un processus en plusieurs étapes: dépose des portes et tiroirs, ponçage et apprêt spécialisé, laquage professionnel (en atelier ou sur place selon le projet) et reinstallation. Le résultat est comparable à une cuisine neuve pour environ 20 % du prix de remplacement. Idéal pour les cuisines en bon état structurel qui ont besoin d\'un rafraîchissement esthétique.' },
@@ -1660,7 +1664,7 @@ const faqs = [
   { cat: 'service', q: 'Peignez-vous les sous-sols et garages?', a: 'Oui, les sous-sols et garages représentent une partie importante de notre clientèle. Pour les sous-sols, nous recommandons des peintures anti-humidité et offrons des options d\'imperméabilisation si nécessaire. Pour les garages, nous proposons le plancher époxy en plus de la peinture des murs — une solution durable qui facilite l\'entretien et améliore l\'esthétique.' },
   { cat: 'processus', q: 'Combien de temps dure un projet de peinture résidentielle?', a: 'La durée varie selon l\'ampleur du projet. Une pièce standard se complète en 1 à 2 jours. Un appartement ou condo complet prend généralement 3 à 5 jours. Une maison complète nécessite de 5 à 10 jours ouvrables. La peinture extérieure d\'une maison standard dure 3 à 7 jours selon la superficie et les conditions météo. Nous vous donnons un calendrier précis dans votre soumission.' },
   { cat: 'processus', q: 'Dois-je préparer mon espace avant votre arrivée?', a: 'Nous vous demandons de libérer les pièces des objets décoratifs et effets personnels. Pour les meubles, notre équipe les déplace et les protège avec des couvertures professionnelles avant de commencer. Nous nous occupons de la protection des planchers, plinthes et autres surfaces adjacentes. Vous n\'avez pas à vous soucier de la préparation technique — c\'est notre travail.' },
-  { cat: 'processus', q: 'Comment choisissez-vous la bonne couleur?', a: 'Nous offrons une consultation couleurs gratuite lors de votre soumission. Nous vous présentons des palettes de couleurs Benjamin Moore et Sherwin-Williams adaptées à votre style, à l\'éclairage naturel de votre espace et à vos préférences personnelles. Si vous êtes indécis, nous pouvons appliquer des échantillons en situation réelle sur vos murs avant le début des travaux. Nous avons aussi accès aux outils de visualisation numérique.' },
+  { cat: 'processus', q: 'Comment choisissez-vous la bonne couleur?', a: 'Nous offrons une consultation couleurs gratuite lors de votre soumission. Nous vous présentons des palettes de couleurs Benjamin Moore, Sherwin-Williams, Betonel et MF Peinture adaptées à votre style, à l\'éclairage naturel de votre espace et à vos préférences personnelles. Si vous êtes indécis, nous pouvons appliquer des échantillons en situation réelle sur vos murs avant le début des travaux.' },
   { cat: 'processus', q: 'Quelle saison est idéale pour la peinture extérieure?', a: 'La peinture extérieure au Québec se réalise idéalement entre la mi-mai et la mi-octobre, lorsque les températures sont au-dessus de 10°C et que l\'humidité est raisonnable. Les journées chaudes et ensoleillées sans risque de pluie dans les 24 heures sont idéales. Nous planifions nos projets extérieurs en tenant compte des prévisions météo pour garantir une adhérence et un séchage optimaux.' },
   { cat: 'processus', q: 'Combien de couches de peinture appliquez-vous?', a: 'Notre standard professionnel inclut toujours un apprêt approprié à la surface, suivi de deux couches de peinture finition. Pour les surfaces problématiques (taches, décoloration forte, changement radical de couleur), nous pouvons appliquer trois couches. Contrairement à certains concurrents qui sautent l\'apprêt pour économiser du temps, nous ne compromettrons jamais la durabilité de votre travail.' },
   { cat: 'processus', q: 'Utilisez-vous des peintures écologiques à faible teneur en COV?', a: 'Oui. Nous privilégions les formules à faible teneur en composés organiques volatils (COV) dans nos gammes Benjamin Moore (Natura, Eco Spec) et Sherwin-Williams (Harmony, Emerald). Ces peintures sont pratiquement sans odeur, certifiées pour la qualité de l\'air intérieur et sûres pour les familles avec jeunes enfants ou personnes sensibles. Mentionnez-le lors de votre soumission et nous sélectionnerons les produits les plus appropriés.' },
@@ -1671,10 +1675,10 @@ const faqs = [
   { cat: 'garantie', q: 'Êtes-vous assurés et titulaires d\'une licence RBQ?', a: 'Oui. Nous possédons une licence de la Régie du bâtiment du Québec (RBQ) et une assurance responsabilité civile complète. Tous nos employés sont couverts par la CNESST. Nous pouvons vous fournir nos preuves d\'assurance et numéro de licence sur demande. Travailler avec une entreprise assurée vous protège en cas d\'accident ou de dommage lors des travaux.' },
   { cat: 'garantie', q: 'Quelle est votre politique si je ne suis pas satisfait?', a: 'Notre engagement est simple: nous ne partons pas tant que vous n\'êtes pas pleinement satisfait. Si des ajustements sont nécessaires après l\'inspection finale, nous les effectuons immédiatement et sans frais supplémentaires. Si un problème survient après notre départ dans le cadre de notre garantie, contactez-nous et nous intervenons rapidement. Votre satisfaction à long terme est notre meilleure publicité.' },
   { cat: 'garantie', q: 'Que comprend exactement votre soumission gratuite?', a: 'Notre soumission gratuite comprend: (1) une visite chez vous par un estimateur expérimenté, (2) une évaluation détaillée des surfaces à peindre, (3) une recommandation de produits et de couleurs, (4) un chiffrage complet par poste (préparation, matériaux, main-d\'œuvre), (5) un calendrier de réalisation estimé. La soumission est fournie par écrit sous 24h. Aucun engagement de votre part n\'est requis.' },
-  { cat: 'service', q: 'Utilisez-vous des peintures Benjamin Moore ou Sherwin-Williams?', a: 'Oui, exclusivement. Nous sommes des applicateurs autorisés de peintures Benjamin Moore et Sherwin-Williams — deux des marques les plus reconnues dans l\'industrie pour leur qualité, leur durabilité et la richesse de leurs coloris. Ces produits offrent une meilleure couverture, une tenue supérieure dans le temps et des résultats plus esthétiques que les marques génériques. C\'est notre engagement envers la qualité.' },
+  { cat: 'service', q: 'Utilisez-vous des peintures Benjamin Moore ou Sherwin-Williams?', a: 'Oui. Nous travaillons avec des produits Benjamin Moore, Sherwin-Williams, Betonel et MF Peinture selon le projet, la surface et la finition recherchée. Ces gammes offrent une meilleure couverture, une tenue supérieure dans le temps et des résultats plus esthétiques que les marques génériques.' },
   { cat: 'processus', q: 'Travaillez-vous aussi dans les zones industrielles et commerciales de Repentigny?', a: 'Oui. Nous intervenons dans les zones industrielles et commerciales de Repentigny et de la région. Entrepôts, usines légères, garages industriels, marquage de planchers et allées de stationnement font partie de nos services. Nous utilisons des peintures époxy et uréthane industrielles pour ces applications spécifiques.' },
   { cat: 'processus', q: 'Faites-vous un suivi après la fin des travaux?', a: 'Nous effectuons un appel de suivi environ une semaine après la fin des travaux pour nous assurer de votre satisfaction et répondre à vos questions. Si vous constatez quelque chose à ajuster, c\'est le moment idéal pour nous le signaler. Nous voulons bâtir une relation à long terme avec nos clients de Repentigny, pas simplement compléter une transaction.' },
-  { cat: 'prix', q: 'Quelle est la différence de prix entre peinture économique et peinture haut de gamme à Repentigny?', a: 'La différence de coût pour les matériaux entre une peinture économique et une peinture haut de gamme Benjamin Moore ou Sherwin-Williams est généralement de 200 $ à 600 $ pour un projet résidentiel complet. Cependant, la peinture haut de gamme offre une meilleure couverture (moins de couches), une durabilité bien supérieure et un résultat esthétique plus satisfaisant. À long terme, c\'est un meilleur investissement.' }
+  { cat: 'prix', q: 'Quelle est la différence de prix entre peinture économique et peinture haut de gamme à Repentigny?', a: 'La différence de coût pour les matériaux entre une peinture économique et une peinture haut de gamme Benjamin Moore, Sherwin-Williams, Betonel ou MF Peinture est généralement de 200 $ à 600 $ pour un projet résidentiel complet. Cependant, la peinture haut de gamme offre une meilleure couverture, une durabilité supérieure et un résultat esthétique plus satisfaisant.' }
 ];
 
 // Build FAQ list
