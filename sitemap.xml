@@ -29,6 +29,16 @@
     </image:image>
   </url>
   <url>
+    <loc>https://peinturerepentigny.ca/es/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://peinturerepentigny.ca/public/images/og-image.jpg</image:loc>
+      <image:title>Pintores profesionales en Repentigny</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://peinturerepentigny.ca/peinture-interieure-repentigny</loc>
     <lastmod>2026-04-29</lastmod>
     <changefreq>monthly</changefreq>

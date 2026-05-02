@@ -6,6 +6,7 @@
   "installCommand": "",
   "rewrites": [
     { "source": "/en", "destination": "/en/index.html" },
+    { "source": "/es", "destination": "/es/index.html" },
     { "source": "/peintres-repentigny", "destination": "/index.html" },
     { "source": "/peintre-repentigny", "destination": "/index.html" },
     { "source": "/entreprise-de-peinture-repentigny", "destination": "/index.html" }
